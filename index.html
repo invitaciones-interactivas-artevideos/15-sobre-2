@@ -213,6 +213,17 @@ img {
   padding: 24px;
   transform: translateY(34px);
   transition: transform 1s ease 0.22s;
+  .sobre-carta {
+  width: 82%;
+  height: 82%;
+  left: 9%;
+  top: 10%;
+  ...
+  transform: translateY(34px);
+  transition: transform 1s ease 0.22s;
+  z-index: 7;
+  position: absolute;
+  }
 }
 
 .sobre-carta span {
@@ -310,7 +321,8 @@ img {
 
 .sobre.abierto .sobre-carta {
   transform: translateY(-138px);
-}
+  z-index: 10;
+  }
 
 .sobre.abierto .sello {
   transform: translate(-50%, -50%) scale(0.75);
