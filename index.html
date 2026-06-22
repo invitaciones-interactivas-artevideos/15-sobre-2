@@ -211,11 +211,11 @@ img {
   display: grid;
   place-items: center;
   padding: 24px;
-  transform: translateY(34px);
+  transform: translateY(10px);
   transition: transform 1s ease 0.22s;
-  position: absolute;
   z-index: 4;
 }
+
 
 .sobre-carta span {
   display: block;
@@ -246,7 +246,7 @@ img {
 }
 
 .sobre-bolsillo {
-  z-index: 6;
+  z-index: 7;
 }
 
 .sobre-bolsillo::before,
@@ -306,21 +306,21 @@ img {
 }
 
 .sobre.abierto .sobre-solapa {
-  transform: rotateX(178deg);
+  transform: rotateX(-180deg);
   filter: brightness(1.06);
+  z-index: 1;
 }
 
 .sobre.abierto .sobre-carta {
+  z-index: 6;
   transform: translateY(-138px);
-  z-index: 10;
-  }
+}
 
 .sobre.abierto .sello {
   transform: translate(-50%, -50%) scale(0.75);
   opacity: 0;
   pointer-events: none;
 }
-
 .app {
   min-height: 100vh;
   opacity: 0;
